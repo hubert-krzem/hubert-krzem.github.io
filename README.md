@@ -1,1 +1,336 @@
-# hubert-krzem.github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pension & Financial</title>
+
+    <link rel="icon" type="image/ico" href="images/favicon/favicon.ico">
+    
+    <link rel="stylesheet" href="style_herostock.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <img class="logo-icon" src="images/p&f_logo.png" alt="Logo">
+                <span class="brand-text">Pension & Financial</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <button class="btn btn-primary">Free Consultation</button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">Trusted Financial Advisors</div>
+                    <h1 class="hero-title">Secure Your Financial Future</h1>
+                    <p class="hero-description">
+                        Expert pension planning and financial advice to help you achieve your retirement goals. 
+                        Professional, independent guidance you can trust.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-large">
+                            Get Started Today
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12,5 19,12 12,19"></polyline>
+                            </svg>
+                        </button>
+                        <button class="btn btn-outline btn-large">
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            Call Now
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-calculator">
+                    <div class="calculator-card">
+                        <div class="calculator-header">
+                            <svg class="calculator-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+                                <line x1="8" y1="6" x2="16" y2="6"></line>
+                                <line x1="8" y1="10" x2="16" y2="10"></line>
+                                <line x1="8" y1="14" x2="16" y2="14"></line>
+                                <line x1="8" y1="18" x2="9" y2="18"></line>
+                                <line x1="12" y1="18" x2="16" y2="18"></line>
+                            </svg>
+                            <h3>Pension Calculator</h3>
+                        </div>
+                        <div class="calculator-content">
+                            <div class="calculator-row">
+                                <span>Current Age</span>
+                                <span class="calculator-value" id="currentAge">35</span>
+                            </div>
+                            <div class="calculator-row">
+                                <span>Retirement Age</span>
+                                <span class="calculator-value" id="retirementAge">65</span>
+                            </div>
+                            <div class="calculator-row">
+                                <span>Monthly Contribution</span>
+                                <span class="calculator-value" id="monthlyContribution">€500</span>
+                            </div>
+                            <div class="calculator-result">
+                                <span class="result-label">Projected Fund</span>
+                                <span class="result-value" id="projectedFund">€485,000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-description">
+                    Comprehensive financial planning services tailored to your unique needs and goals.
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Pension Planning</h3>
+                    <p class="service-description">
+                        Maximise your retirement savings with our expert pension planning strategies.
+                    </p>
+                    <ul class="service-list">
+                        <li>Personal Retirement Savings Accounts (PRSA)</li>
+                        <li>Occupational Pension Schemes</li>
+                        <li>Self-Administered Pension Schemes</li>
+                        <li>Pension Reviews & Transfers</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Investment Planning</h3>
+                    <p class="service-description">
+                        Build wealth through strategic investment planning and portfolio management.
+                    </p>
+                    <ul class="service-list">
+                        <li>Investment Portfolio Reviews</li>
+                        <li>Risk Assessment & Management</li>
+                        <li>Tax-Efficient Investing</li>
+                        <li>Regular Savings Plans</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14,2 14,8 20,8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10,9 9,9 8,9"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Financial Planning</h3>
+                    <p class="service-description">
+                        Comprehensive financial planning to secure your family's future.
+                    </p>
+                    <ul class="service-list">
+                        <li>Life Insurance & Protection</li>
+                        <li>Mortgage Protection</li>
+                        <li>Income Protection</li>
+                        <li>Estate Planning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <!-- Top Row -->
+                <div class="about-top-row">
+                    <div class="about-text">
+                        <h2 class="about-title">Why Choose Us?</h2>
+                        <p class="about-description">
+                            With over 30 years of experience in financial planning, we provide independent, 
+                            professional advice to help you make informed decisions about your financial future.
+                        </p>
+                        <div class="credentials-grid">
+                            <div class="credential">
+                                <svg class="credential-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="8" r="7"></circle>
+                                    <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"></polyline>
+                                </svg>
+                                <span>Qualified Financial Advisor (QFA)</span>
+                            </div>
+                            <div class="credential">
+                                <svg class="credential-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                                <span>500+ Satisfied Clients</span>
+                            </div>
+                            <div class="credential">
+                                <svg class="credential-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12,6 12,12 16,14"></polyline>
+                                </svg>
+                                <span>30+ Years Experience</span>
+                            </div>
+                            <div class="credential">
+                                <svg class="credential-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                </svg>
+                                <span>Fully Regulated & Insured</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Founder Section -->
+                    <div class="founder-section">
+                        <div class="founder-card">
+                            <div class="founder-image">
+                                <img src="images/headshot-temp.png" alt="John O'Sullivan - Founder & Senior Financial Advisor" class="founder-photo">
+                                <!-- img src="/placeholder.svg?height=120&width=120" alt="John O'Sullivan - Founder & Senior Financial Advisor" class="founder-photo" -->
+                            </div>
+                            <div class="founder-info">
+                                <h3 class="founder-name">John Clare APA</h3>
+                                <p class="founder-title">Director</p>
+                                <p class="founder-description">
+                                    John brings over three decades of expertise in financial planning and pension advice.
+                                </p>
+                                <p class="founder-description">
+                                    A Qualified Financial Advisor (QFA) with additional certifications in retirement planning, 
+                                    he has helped hundreds of Irish families secure their financial futures.
+                                </p>
+                                <div class="founder-qualifications">
+                                    <span class="qualification-badge">QFA Certified</span>
+                                    <span class="qualification-badge">MSc Finance</span>
+                                    <span class="qualification-badge">ACCA Member</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bottom Row - Feature Cards -->
+                <div class="about-features">
+                    <div class="feature-card">
+                        <h4>Independent Advice</h4>
+                        <p>We provide completely independent financial advice, ensuring our recommendations are always in your best interest.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Personalised Service</h4>
+                        <p>Every client receives a tailored financial plan based on their unique circumstances and goals.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Ongoing Support</h4>
+                        <p>We provide continuous monitoring and regular reviews to ensure your financial plan stays on track.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-description">
+                    Ready to take control of your financial future? Contact us today for a free consultation.
+                </p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                    </div>
+                    <h3>Phone</h3>
+                    <p class="contact-value">+353 01 5637900</p>
+                    <p class="contact-note">Mon-Fri 9AM-5PM</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Email</h3>
+                    <p class="contact-value">info@pensionandfinancial.ie</p>
+                    <p class="contact-note">We'll respond within 24 hours</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3>Office</h3>
+                    <p class="contact-address">Pension & Financial, The Square,<br>Enniskerry, Co. Wicklow, A98 PK26</p>
+                    <p class="contact-note">By appointment only</p>
+                </div>
+            </div>
+            <div class="contact-cta">
+                <button class="btn btn-primary btn-large">
+                    Schedule Free Consultation
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12,5 19,12 12,19"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                     <img class="footer-icon" src="images/p&f_logo.png" alt="Logo">
+                    <p class="footer-text">
+                        John Clare & Associates Ltd, trading as Pension & Financial, is regulated by the Central Bank of Ireland.<br>
+                        © 2025 Pension & Financial. All rights reserved.<br>
+                        Company No. 323124.
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
