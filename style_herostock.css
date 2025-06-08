@@ -145,7 +145,7 @@ body {
     padding: 8rem 0 4rem;
 
     /* Alternative hero background with grandmother stock image */
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/family1.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("family1.jpg");
     background-size: cover;
     background-position: center;
 
